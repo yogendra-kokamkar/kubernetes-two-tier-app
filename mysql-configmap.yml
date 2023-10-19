@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: mysql-init-script
 data:
-  create_table.sql: |
+  message.sql: |
     CREATE TABLE messages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     message TEXT);
