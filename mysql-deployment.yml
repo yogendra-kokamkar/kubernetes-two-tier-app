@@ -42,7 +42,7 @@ spec:
         - "-c"
         - "sudo systemctl start mysql"
         - "sudo systemctl enable mysql"
-        - "mysql -u root -p$MYSQL_ROOT_PASSWORD < /etc/mysql/init-scripts/message.sql"
+        - "sudo mysql -u root -p$MYSQL_ROOT_PASSWORD < /etc/mysql/init-scripts/message.sql"
         volumeMounts:
         - name: init-scripts
           mountPath: /etc/mysql/init-scripts
